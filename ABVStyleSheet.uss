@@ -1,0 +1,567 @@
+VisualElement {
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+#controlArea {
+    width: 300px;
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+}
+
+#viewport {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    flex-direction: row;
+    background-color: rgba(165, 165, 165, 0);
+}
+
+#buttonbar {
+    flex-direction: column;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    -unity-text-align: middle-center;
+    padding-top: 12px;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+}
+
+#buttonbar > Label {
+    width: 125px;
+    height: 37px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    font-size: 13px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(238, 238, 238);
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+#buttonbar > Label:hover {
+    background-color: rgb(151, 157, 190);
+}
+
+#settingsPanel {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+}
+
+.section {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 12px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 12px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 12px;
+    margin-right: 0;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-around;
+}
+
+.section > Label {
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 9px;
+    -unity-text-align: upper-center;
+    height: 25px;
+}
+
+.rowLabel {
+    -unity-text-align: middle-left;
+    width: 63px;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.keyElement {
+    -unity-text-align: middle-center;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(221, 221, 221);
+    -unity-font-style: normal;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 113px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.keyElement > VisualElement {
+    width: 20px;
+    height: 23px;
+    background-image: none;
+}
+
+.keyGuideLabel {
+    width: 23px;
+    font-size: 13px;
+    -unity-font-style: normal;
+    height: 23px;
+}
+
+.modifierKeyLabel {
+    font-size: 12px;
+    height: 25px;
+    width: 40px;
+    background-color: rgb(151, 157, 190);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    letter-spacing: 2px;
+    -unity-font-style: bold;
+}
+
+.valueLabel {
+    height: 38px;
+    width: 50px;
+    -unity-text-align: middle-center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#viewportTitleLabel {
+    -unity-text-align: middle-center;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+#viewportIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/appIcon.png?fileID=2800000&guid=9dda0b955e96c3549820c9200e2a9224&type=3#appIcon');
+    width: 70px;
+    height: 70px;
+    margin-bottom: 9px;
+}
+
+#viewportContainer {
+    align-items: center;
+    -unity-text-align: middle-center;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    max-width: 420px;
+    min-width: 200px;
+}
+
+#viewportInstructionLabel {
+    font-size: 14px;
+    -unity-paragraph-spacing: 100px;
+    -unity-text-align: upper-left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    white-space: normal;
+    margin-bottom: 15px;
+}
+
+#unity-dragger {
+    background-color: rgb(200, 200, 200);
+}
+
+#unity-dragger-border {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#unity-dragger:hover {
+    background-color: rgb(151, 157, 190);
+}
+
+#unity-tracker {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-scroller--vertical {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    right: -4px;
+    width: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.unity-scroller--vertical > #unity-low-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    width: 15px;
+    display: none;
+}
+
+.unity-scroller--vertical > #unity-high-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    width: 15px;
+    display: none;
+}
+
+.unity-scroller--vertical #unity-drag-container {
+    width: 15px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-scroller--vertical #unity-tracker {
+    width: 15px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.unity-scroller--vertical #unity-dragger {
+    width: 7px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.unity-scroller--vertical #unity-slider {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.unity-scroller--horizontal {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    bottom: -7px;
+}
+
+.unity-scroller--horizontal > #unity-low-button {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+}
+
+.unity-scroller--horizontal > #unity-high-button {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+}
+
+#leftClickIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/leftClickIcon.png?fileID=2800000&guid=ae83edeaa44c1ac4db5c55431787990a&type=3#leftClickIcon');
+    width: 21px;
+    height: 24px;
+}
+
+#mouseWheelIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/mouseWheelIcon.png?fileID=2800000&guid=f5822ec3ffc57344c90f6e8146857ef9&type=3#mouseWheelIcon');
+    width: 21px;
+    height: 24px;
+}
+
+#rightClickIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/rightClickIcon.png?fileID=2800000&guid=3ff5ca409fdaeb244b3952296057ab8e&type=3#rightClickIcon');
+    width: 21px;
+    height: 24px;
+}
+
+#classifierOutputContainer {
+    position: absolute;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: rgb(221, 221, 221);
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    min-width: 220px;
+    min-height: 170px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: none;
+    bottom: 10px;
+    right: 10px;
+}
+
+#progressContainer {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(221, 221, 221);
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#progressContainer > Label {
+    white-space: normal;
+}
+
+.unity-progress-bar {
+    width: 100%;
+    height: 40px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(182, 182, 182);
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 100%;
+}
+
+.unity-progress-bar__progress {
+    background-color: rgb(121, 128, 173);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.unity-progress-bar__container {
+    height: 100%;
+    width: 100%;
+}
+
+#viewportActionBar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 45px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(221, 221, 221);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    align-items: center;
+    justify-content: center;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.action:hover {
+    background-color: rgb(151, 157, 190);
+}
+
+#imageCaptureIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/imageCaptureIcon.png?fileID=2800000&guid=f50f89c0cee612e418eefd170b8b5da4&type=3#imageCaptureIcon');
+    height: 19px;
+    width: 20px;
+}
+
+#fullscreenIcon {
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/enterFullscreenIcon.png?fileID=2800000&guid=23c92375c1ea2c54fac40ea127da7acb&type=3#enterFullscreenIcon');
+    width: 19px;
+    height: 19px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+#panelViewControlIcon {
+    width: 22px;
+    height: 22px;
+    background-image: url('project://database/Assets/AssetBundleViewer/Resources/Icons/hidePanelIcon.png?fileID=2800000&guid=f409419d69ae8534eadf0e1fa3d08803&type=3#hidePanelIcon');
+}
+
+.settingsFloatingPanel {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: absolute;
+    top: 64px;
+    right: 10px;
+    background-color: rgba(221, 221, 221, 0.85);
+    width: 235px;
+    height: 250px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    display: none;
+}
+
+.settingsPanelRow {
+    height: 35px;
+    flex-direction: row;
+    -unity-text-align: middle-left;
+}
+
+.settingsPanelLabel {
+    width: 45%;
+}

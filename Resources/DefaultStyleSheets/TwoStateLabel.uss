@@ -1,0 +1,61 @@
+.two-state-label {
+    flex-direction: row;
+    -unity-text-align: middle-center;
+    min-width: 80px;
+    height: 30px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.selectable-label {
+    min-width: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.selectable-label > .fIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.selectable-label > .fIcon > .fIcon-dot {
+    display: none;
+}
+
+.selectable-label > .fIcon > .fIcon-image {
+    width: 15px;
+    height: 15px;
+}
+
+.two-state-label-ltSLabel {
+    border-right-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.two-state-label-rtSLabel {
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.two-state-label > .selectable-label:hover {
+}
+
+.two-state-label > .selectable-label-selected {
+}

@@ -1,0 +1,126 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AssetBundleViewer/ABVStyleSheet.uss?fileID=7433441132597879392&amp;guid=f4b5c4e69cb933843abf0be94e010252&amp;type=3#ABVStyleSheet" />
+    <ui:VisualElement name="root">
+        <ui:VisualElement name="controlArea">
+            <ui:VisualElement name="buttonbar">
+                <ui:Label display-tooltip-when-elided="true" text="Load 3D Model" name="load3DModelLabel" />
+                <ui:Label display-tooltip-when-elided="true" text="Load Skybox" name="loadSkyboxLabel" />
+                <ui:Label display-tooltip-when-elided="true" text="Reset" name="resetLabel" />
+            </ui:VisualElement>
+            <ui:ScrollView name="settingsPanel" vertical-scroller-visibility="Auto" mode="Vertical" horizontal-scroller-visibility="Hidden" nested-interaction-kind="StopScrolling">
+                <ui:VisualElement class="section">
+                    <ui:Label text="CAMERA" display-tooltip-when-elided="true" />
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Elevation" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="cameraElevationLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="leftClickIcon" class="mouseLeftClickIcon" style="background-image: resource(&apos;Icons/leftClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Azimuth" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="cameraAzimuthLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" />
+                            <ui:VisualElement name="leftClickIcon" style="background-image: resource(&apos;Icons/leftClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Distance" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="cameraDistanceLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="mouseWheelIcon" style="background-image: resource(&apos;Icons/mouseWheelIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="section">
+                    <ui:Label text="OBJECT" display-tooltip-when-elided="true" />
+                    <ui:VisualElement class="row">
+                        <ui:Label text="X rotate" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="objectXRotationLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="ctrl" display-tooltip-when-elided="true" class="modifierKeyLabel" />
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="mouseWheelIcon" style="background-image: resource(&apos;Icons/mouseWheelIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Y rotate" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="objectYRotationLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="shift" display-tooltip-when-elided="true" class="modifierKeyLabel" />
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="mouseWheelIcon" style="background-image: resource(&apos;Icons/mouseWheelIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Z rotate" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="objectZRotationLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="alt" display-tooltip-when-elided="true" class="modifierKeyLabel" />
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="mouseWheelIcon" style="background-image: resource(&apos;Icons/mouseWheelIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="section">
+                    <ui:Label text="LIGHT" display-tooltip-when-elided="true" />
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Elevation" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="lightElevationLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="rightClickIcon" style="background-image: resource(&apos;Icons/rightClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Azimuth" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="lightAzimuthLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" />
+                            <ui:VisualElement name="rightClickIcon" style="background-image: resource(&apos;Icons/rightClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Intensity" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="lightIntensityLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="alt" display-tooltip-when-elided="true" class="modifierKeyLabel" />
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="rightClickIcon" style="background-image: resource(&apos;Icons/rightClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="row">
+                        <ui:Label text="Exposure" display-tooltip-when-elided="true" class="rowLabel" />
+                        <ui:Label display-tooltip-when-elided="true" name="skyboxExposureLabel" class="valueLabel" />
+                        <ui:VisualElement class="keyElement">
+                            <ui:Label text="ctrl" display-tooltip-when-elided="true" class="modifierKeyLabel" />
+                            <ui:Label text="↔" display-tooltip-when-elided="true" class="keyGuideLabel" style="rotate: 90deg;" />
+                            <ui:VisualElement name="rightClickIcon" style="background-image: resource(&apos;Icons/rightClickIcon&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="viewport">
+            <ui:VisualElement name="viewportContainer">
+                <ui:VisualElement name="viewportIcon" style="background-image: resource(&apos;Icons/appIcon&apos;);" />
+                <ui:Label text="Asset Bundle Viewer" display-tooltip-when-elided="true" name="viewportTitleLabel" />
+                <ui:Label text="This is a very simple viewer for &lt;b&gt;Unity&lt;/b&gt; asset bundles.&#10;❖ Please start by loading a model (adding a skybox is optional);&#10;❖ You can then control some view parameters using the controls listed in the panel; &#10;❖ For resetting the viewport click on the reset button." display-tooltip-when-elided="true" name="viewportInstructionLabel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="viewportActionBar">
+                <ui:VisualElement name="fullscreenVE" class="action">
+                    <ui:VisualElement name="fullscreenIcon" style="background-image: resource(&apos;Icons/enterFullscreenIcon&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="imageCaptureVE" class="action">
+                    <ui:VisualElement name="imageCaptureIcon" style="background-image: resource(&apos;Icons/imageCaptureIcon&apos;);" />
+                </ui:VisualElement>
+                <AssetBundleViewer.SelectableLabel name="panelViewControlSL" class="action">
+                    <ui:VisualElement name="panelViewControlIcon" style="background-image: resource(&apos;Icons/hidePanelIcon&apos;);" />
+                </AssetBundleViewer.SelectableLabel>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
